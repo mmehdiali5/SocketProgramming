@@ -1,0 +1,9 @@
+- Goto the folder Source Files where all the java source files are located and open terminal in this folder.
+- Write the command "javac GET.java PUT.java DELETE.java Response.java SerializerDeserializer.java Server.java Client.java" (Note the ordering should be same as described because server and client classes depends on PUT, GET and DELETE files)
+- This will generate .class files for each source file.
+- To run the server write the command " java -cp . Server <PORT> "
+- You can write required PORT in place of <PORT> in the command
+- This will start the server which will be listening to requests at the given port number
+- Now open a second terminal in the same folder and write the command " java -cp . Client <host Address> <PORT> <CLIENT_PORT> "
+- Replace host address and PORT with server's address and port. Replace CLIENT_PORT with required port to run the client program on.
+- This will start the client in this terminal. Some pre defined requests will be sent to the server. After that the client will be run in interactive mode where the user can request put, get or delete from the server 
